@@ -13,6 +13,8 @@ Para rodar o projeto, é preciso:
 - baixar o projeto Bravi API do link abaixo, e seguir seu arquivo de configuração.
 https://github.com/vissini/bravi_api
 
+-Link inicial para o sistema: localhost:8000/admin
+
 ##Melhorias Futuras
 
 - Implementar autenticação
