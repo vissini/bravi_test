@@ -125,7 +125,7 @@ class ContactController extends Controller
         $response = Http::get('http://localhost:3000/api/person/'.$person_id.'/contact/'.$id);
         if($response->status() == 200) {
             $response = Http::delete('http://localhost:3000/api/person/'.$person_id.'/contact/'.$id);
-            return redirect()->route('contact.index', ['person_id'=>$person_id])->with('success',"Contato deletada com sucesso!");
+            return redirect()->route('contact.index', ['person_id'=>$person_id])->with('success',"Contato deletado com sucesso!");
         } else {
             return redirect()->route('contact.index', ['person_id'=>$person_id])->with('error',"Contato não encontrada!");
         }

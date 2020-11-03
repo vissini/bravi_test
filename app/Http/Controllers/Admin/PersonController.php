@@ -17,13 +17,9 @@ class PersonController extends Controller
      */
     public function index()
     {
-        try {
-            $response = Http::get('http://localhost:3000/api/person');
-            $people = json_decode($response->body());
-            return view('admin.pages.person.index', compact('people'));
-        } catch (Exception $e) {
-
-        }
+        $response = Http::get('http://localhost:3000/api/person');
+        $people = json_decode($response->body());
+        return view('admin.pages.person.index', compact('people'));
     }
 
     /**
